@@ -1,0 +1,29 @@
+@use '../../shared/utilities/styles/flex-display' as flex;
+
+.header {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    &__back {
+        background: #ffffff11;
+        color: #fff;
+    }
+    &__title {
+        @include flex.flex-center;
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        @include flex.flex-center;
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin: 10px 0;
+    }
+    &__description {
+        @include flex.flex-center;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --text-color: white;
+  --bg-color: #59a0ed;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(180deg, #07081e, #2f425f);
+}

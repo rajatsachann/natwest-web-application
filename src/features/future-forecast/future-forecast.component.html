@@ -1,0 +1,17 @@
+<div *ngIf="weatherService.weatherData() as weather">
+  <div class="future-forecast">
+    <h3 class="future-forecast__title">5 - DAY FORECAST</h3>
+    <div class="future-forecast__list">
+      <div class="future-forecast__item" *ngFor="let data of fiveDayForecast()">
+        <span class="future-forecast__day">{{ data?.day }}</span>
+        <img 
+          class="future-forecast__icon" 
+          [src]="'assets/icons/' + data.icon + '.png'" 
+          [alt]="data.description" 
+        />
+        <span class="future-forecast__temp future-forecast__temp--min">{{ data?.minTemp | number:'1.0-0' }}°</span>
+        <span class="future-forecast__temp future-forecast__temp--max">{{ data?.maxTemp | number:'1.0-0' }}°</span>
+      </div>
+    </div>
+  </div>
+</div>

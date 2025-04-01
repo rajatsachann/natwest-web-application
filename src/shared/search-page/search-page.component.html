@@ -1,0 +1,19 @@
+<div class="search-page">
+    <div class="search-page__header">
+      <img src="assets/icons/natwest-logo.jpg" alt="NatWest Logo" class="search-page__logo">
+      <h1 class="search-page__title">Weather Forecast Application</h1>
+    </div>
+  
+    <div class="search-page__search-box">
+      <input 
+        type="text" 
+        [(ngModel)]="searchQuery" 
+        (keyup.enter)="search()"
+        placeholder="Enter city name"
+        class="search-page__input"
+      >
+      <button (click)="search()" class="search-page__button">
+        <img src="assets/icons/search-icon.svg" alt="Search" class="search-page__button-icon">
+      </button>
+    </div>
+  </div>

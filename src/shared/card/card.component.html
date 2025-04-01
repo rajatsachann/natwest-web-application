@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="weather-cards">
+      @for (card of cards(); track card.title) {
+        <app-card-details
+          [title]="card.title"
+          [icon]="card.icon"
+          [description]="card.description"
+          [footer]="card.footer">
+        </app-card-details>
+      }
+    </div>
+  </div>

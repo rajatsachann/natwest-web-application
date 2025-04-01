@@ -1,0 +1,10 @@
+<div *ngIf="weatherService.weatherData() as weather" class="header">
+  <button class="header__back" (click)="returnToSearch()">Back</button>
+  <div class="header__title">
+    {{ weather?.city?.name }}
+  </div>
+  <div class="header__subtitle">{{ weather?.list?.[0]?.main?.temp | number:'1.0-0'  }}°C</div>
+  <div class="header__description">
+    {{ weather?.list?.[0]?.weather?.[0]?.description }}
+  </div>
+</div>
