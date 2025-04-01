@@ -1,7 +1,7 @@
-# Natwest Forecasting Application
+# Natwest Forecasting Application - Task
 
 ## Overview
-The **Natwest Forecasting Application** is an Angular 19-based web application that provides real-time weather forecasts for different locations. Users can search for a city and view detailed weather insights, including temperature, humidity, wind speed, and future predictions.
+This task is an Angular based web application that provides real-time weather forecasts for different locations. Users can search for a city and view detailed weather insights, including temperature, humidity, wind speed, and future predictions.
 
 ## Features
 
